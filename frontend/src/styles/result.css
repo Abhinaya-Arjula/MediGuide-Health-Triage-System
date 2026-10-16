@@ -1,0 +1,65 @@
+.result-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f7f8fc;
+    padding: 30px;
+}
+
+.result-card {
+    width: 100%;
+    max-width: 650px;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.result-card h1 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.risk-section,
+.doctor-section {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background: #f8f7ff;
+}
+
+.risk-level {
+    font-size: 32px;
+    font-weight: 700;
+    color: #7c3aed;
+}
+
+.doctor-section p {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.result-warning {
+    padding: 15px;
+    background: #fff7ed;
+    border-radius: 10px;
+    color: #92400e;
+}
+
+.result-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.result-actions button {
+    flex: 1;
+    padding: 13px;
+    border: none;
+    border-radius: 9px;
+    background: #7c3aed;
+    color: white;
+    cursor: pointer;
+}
