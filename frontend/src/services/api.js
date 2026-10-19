@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "http://localhost:8081/api"
+    baseURL: "https://mediguide-health-triage-system-rtgw.onrender.com"
 });
 
 export default api;
