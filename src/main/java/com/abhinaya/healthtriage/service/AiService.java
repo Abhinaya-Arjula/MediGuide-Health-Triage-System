@@ -1,4 +1,4 @@
-package com.abhinaya.healthtriage.service;
+/*package com.abhinaya.healthtriage.service;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.MediaType;
@@ -115,4 +115,4 @@ public class AiService {
             return fallback;
         }
     }
-}
+}*/

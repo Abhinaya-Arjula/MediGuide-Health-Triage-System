@@ -1,4 +1,4 @@
-package com.abhinaya.healthtriage.controller;
+/*package com.abhinaya.healthtriage.controller;
 
 import com.abhinaya.healthtriage.service.AiService;
 import org.springframework.web.bind.annotation.*;
@@ -20,4 +20,4 @@ public class AiController {
 
         return aiService.explain(level, doctor);
     }
-}
+}*/
