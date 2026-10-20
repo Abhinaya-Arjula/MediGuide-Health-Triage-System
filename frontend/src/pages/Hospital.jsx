@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { useNavigate} from "react-router-dom";
 import api from "../services/api";
 
 function Hospital() {
+    const navigate = useNavigate();
     const [hospitals, setHospitals] = useState([]);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState("");
@@ -64,7 +66,7 @@ function Hospital() {
                     </p>                </article>
             ))}
 
-            <button onClick={() => window.location.href = "/dashboard"}>
+            <button onClick={() => navigate( "/dashboard")}>
                 Back to Dashboard
             </button>
         </main>

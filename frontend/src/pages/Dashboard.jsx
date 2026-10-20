@@ -8,6 +8,9 @@ function Dashboard() {
 
     const userEmail = localStorage.getItem("userEmail");
 
+    const userName = userEmail
+        ? userEmail.split("@")[0]
+        : "User";
     const handleLogout = () => {
         localStorage.removeItem("loggedIn");
         localStorage.removeItem("userEmail");
@@ -35,7 +38,7 @@ function Dashboard() {
 
                 <section className="welcome-section">
 
-                    <h2>Welcome 👋</h2>
+                    <h2>Welcome 👋, {userName}</h2>
 
                     <p>
                         {userEmail}
