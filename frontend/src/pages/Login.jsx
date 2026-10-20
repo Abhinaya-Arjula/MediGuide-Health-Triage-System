@@ -54,10 +54,6 @@ function Login() {
                     <div className="health-icon">♥</div>
 
                     <h1>Health Triage</h1>
-
-                    <p>
-                        AI-powered health assessment
-                    </p>
                 </div>
 
                 <form onSubmit={handleLogin}>

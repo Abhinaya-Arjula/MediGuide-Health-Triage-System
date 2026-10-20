@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
+import {useNavigate} from "react-router-dom";
 import api from "../services/api";
 
 function History() {
+    const navigate = useNavigate();
     const [history, setHistory] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState("");
@@ -51,7 +53,7 @@ function History() {
                 </article>
             ))}
 
-            <button onClick={() => window.location.href = "/dashboard"}>
+            <button onClick={() => navigate("/dashboard")}>
                 Back to Dashboard
             </button>
         </main>

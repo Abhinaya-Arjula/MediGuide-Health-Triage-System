@@ -41,36 +41,11 @@ function Dashboard() {
                     <h2>Welcome 👋, {userName}</h2>
 
                     <p>
-                        {userEmail}
-                    </p>
-
-                    <p>
                         Check your symptoms and get an initial
                         health risk assessment.
                     </p>
 
                 </section>
-                {result && (
-                    <section className="dashboard-card">
-                        <h3>Latest Assessment Result</h3>
-
-                        <pre style={{ whiteSpace: "pre-wrap" }}>
-            {typeof result === "string"
-                ? result
-                : JSON.stringify(result, null, 2)}
-        </pre>
-
-                        <button
-                            onClick={() =>
-                                navigate("/result", {
-                                    state: { result: result }
-                                })
-                            }
-                        >
-                            View Detailed Result
-                        </button>
-                    </section>
-                )}
 
                 <section className="dashboard-cards">
 

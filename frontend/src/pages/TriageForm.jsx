@@ -35,7 +35,7 @@ function TriageForm() {
 
             console.log("TRIAGE RESPONSE:", response.data);
 
-            navigate("/dashboard", {
+            navigate("/result", {
                 state: {
                     result: response.data
                 }

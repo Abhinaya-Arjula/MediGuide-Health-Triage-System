@@ -46,17 +46,6 @@ function Result() {
         <div className="result-page">
 
             <div className="result-card">
-                <div className="ai-section">
-                    <h2>🤖 AI Health Explanation</h2>
-
-                    <button onClick={getAIExplanation} disabled={aiLoading}>
-                        {aiLoading ? "Generating Explanation..." : "Get AI Explanation"}
-                    </button>
-
-                    {aiExplanation && (
-                        <p>{aiExplanation}</p>
-                    )}
-                </div>
 
                 <h1>Health Assessment Result</h1>
 
