@@ -25,6 +25,7 @@ function Login() {
 
             localStorage.setItem("loggedIn", "true");
             localStorage.setItem("userEmail", email);
+            navigate("/triage");
 
         } catch (error) {
 
